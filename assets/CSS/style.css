@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@400;700&display=swap');
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    font-family: 'Signika Negative', sans-serif;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    background-color: #EFF5F5;
+}
+
+header.navbar-container{
+    background-color: #495579;
+    position: fixed;
+    width: 100%;
+    margin-inline: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-block: .5rem
+}
+
+header.navbar-container .logo img{
+    width: 150px;
+    border-radius: 10px;
+}
+
+header.navbar-container .nav-list ul{
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem 1rem;
+}
+
+header.navbar-container .nav-list li{
+    list-style-type: none;
+}
+
+header.navbar-container .nav-list a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: black;
+    padding: .5rem 1.5rem;
+    border-radius: 999px;
+    transition: all .2s ease-in-out;
+}
+
+header.navbar-container .nav-list li:hover a{
+    background-color: #425c77;
+    color: white;
+}
+
+main{
+    max-width: 1200px;
+    width: 70%;
+    float: left;
+    margin-top: 10rem;
+    padding: 2rem 3rem;
+    
+    display: flex;
+    align-items: center;
+}
+main .content{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+}
+
+main .content .content-descriprion{
+    flex: 1 1;
+}
+
+main .content .content-descriprion .title{
+    font-size: 3.5rem;
+    margin-block: 1rem;
+    padding-top: 90px;
+}
+
+main .content .content-descriprion p{
+    line-height: 1.7rem;
+    font-size: 1.2rem;
+}
+
+main .content .content-image{
+    flex: 1;
+    display: flex;
+    padding-top: 90px;
+}
+
+main .content .content-image img{
+    margin: auto;
+    min-width: 250px;
+    width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 5px #666666;
+
+}
+
+aside .profil{
+    float: right;
+    width: 25%;
+    margin-top: 10rem;
+    margin-right: 3rem;
+    padding: 0.5rem 2rem;
+    position: fixed;
+    margin-bottom: 10rem;
+
+    inset-block: 0;
+    inset-inline-end: 0;
+    border-style: solid;
+    border-radius: 10px;
+    background-color: #BAD7E9;
+}
+aside .profil header{
+    text-align: center;
+}
+
+aside .profil h2{
+    background-color: #495579;
+    color: white;
+    border-radius: 10px;
+}
+
+aside .profil img{
+    width: 125px;
+    border-radius: 10px;
+}
+
+aside section{
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+aside table tr th{
+    text-align: left;
+}
+
+aside table tr td{
+    text-align: center;
+}
+
+
+.deskripsi{
+    padding: 2rem 4rem;
+    width: 75%;
+}
+
+.deskripsi h2{
+    text-align: center;
+    padding-top: 150px;
+}
+.deskripsi .wisata{
+    border-radius: 10px;
+    align-items: center;
+    
+    text-indent: 2em;
+    text-align: justify;
+}
+
+.deskripsi .wisata .pariwisata{
+    text-align: center;
+}
+
+.deskripsi .wisata .pariwisata p{
+    text-align: justify;
+}
+
+.deskripsi .wisata .pariwisata img{
+    width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 5px #666666;
+}
+
+.deskripsi .wisata .pariwisata figcaption{
+    text-align: center;
+}
+
+.deskripsi .event p{
+    text-indent: 2em;
+    text-align: justify;
+}
+
+.deskripsi .event .pertama{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.deskripsi .event .pertama .bau-nyale{
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.deskripsi .event .pertama .porprov{
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    padding: 0.5rem 1rem;
+    margin-left: 1rem;
+    border-radius: 5px;
+    width: 300px;
+}
+
+
+.deskripsi .event .pertama .wsbk{
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    padding: 0.5rem 1rem;
+    margin-left: 1rem;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.deskripsi .event .kedua{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.deskripsi .event .kedua .tambora{
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.deskripsi .event .kedua .motogp{
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.deskripsi .event .kedua .mxgp{
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    border-radius: 5px;
+    width: 300px;
+}
+/*End of Main Content*/
+
+
+
+
+/*footer*/
+footer{
+    color: white;
+    background-color: #425c77;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+}
+   
+footer  ul {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: .5rem;
+    align-items: center;
+    justify-content: center;
+}
+   
+footer  li {
+    list-style-type: none;
+    color: white;
+}
+
+footer  li a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+    margin-right: 0.5rem;
+}
+   
+footer  li a:hover {
+    color: #89b0d9;
+}
+
+footer p{
+    text-align: center;
+    margin: auto;
+}
+
+/*Medium devices (landscape tablets, 768px and down) */
+@media screen and (max-width: 1200px){
+    header .navbar-conatiner{
+        flex-direction: column;
+    }
+
+    header .navbar-conatiner .nav-list ul{
+        flex-wrap: wrap;
+        column-gap: .5rem;
+    }
+
+    main{
+        padding: 1rem 3rem;
+    }
+
+    main .content{
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    main .content .content-descriprion .title{
+        font-size: 3rem;
+    }
+
+    main .content .content-descriprion p{
+        font-size: 1rem;
+    }
+
+    main .content .content-image{
+        order: -1;
+        width: 120px;
+        margin-right: 5rem;
+
+    }
+
+    aside{
+        flex-wrap: wrap;
+        flex-direction: column;
+        font-size: 80%;
+        padding-left: -5rem;
+    }
+
+    aside section{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    aside .profil img{
+        width: 70px;
+    }
+
+    .deskripsi .wisata .pariwisata{
+        text-align: center;
+    }
+
+    .deskripsi .wisata .pariwisata figcaption{
+        text-align: center;
+    }
+
+    .deskripsi .wisata .pariwisata img{
+        width: 250px;
+    }
+
+    .deskripsi .event .pertama img{
+        width: 80px;
+    }
+
+    .deskripsi .event .kedua img{
+        width: 80px;
+    }
+}
